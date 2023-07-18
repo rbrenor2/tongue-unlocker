@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AB141FF2A671FA0002BCF5A /* tongue_unlockerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB141FE2A671FA0002BCF5A /* tongue_unlockerApp.swift */; };
+		0AB142012A671FA0002BCF5A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB142002A671FA0002BCF5A /* Persistence.swift */; };
+		0AB142042A671FA0002BCF5A /* tongue_unlocker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AB142022A671FA0002BCF5A /* tongue_unlocker.xcdatamodeld */; };
+		0AB142062A671FA0002BCF5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB142052A671FA0002BCF5A /* ContentView.swift */; };
+		0AB142082A671FA2002BCF5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB142072A671FA2002BCF5A /* Assets.xcassets */; };
+		0AB1420C2A671FA2002BCF5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB1420B2A671FA2002BCF5A /* Preview Assets.xcassets */; };
+		0AB142162A671FA2002BCF5A /* tongue_unlockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB142152A671FA2002BCF5A /* tongue_unlockerTests.swift */; };
+		0AB142202A671FA2002BCF5A /* tongue_unlockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1421F2A671FA2002BCF5A /* tongue_unlockerUITests.swift */; };
+		0AB142222A671FA2002BCF5A /* tongue_unlockerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB142212A671FA2002BCF5A /* tongue_unlockerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AB142122A671FA2002BCF5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AB141F32A671F9F002BCF5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AB141FA2A671F9F002BCF5A;
+			remoteInfo = "tongue-unlocker";
+		};
+		0AB1421C2A671FA2002BCF5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AB141F32A671F9F002BCF5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AB141FA2A671F9F002BCF5A;
+			remoteInfo = "tongue-unlocker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AB141FB2A671F9F002BCF5A /* tongue-unlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tongue-unlocker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB141FE2A671FA0002BCF5A /* tongue_unlockerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tongue_unlockerApp.swift; sourceTree = "<group>"; };
+		0AB142002A671FA0002BCF5A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		0AB142032A671FA0002BCF5A /* tongue_unlocker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tongue_unlocker.xcdatamodel; sourceTree = "<group>"; };
+		0AB142052A671FA0002BCF5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0AB142072A671FA2002BCF5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AB142092A671FA2002BCF5A /* tongue_unlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tongue_unlocker.entitlements; sourceTree = "<group>"; };
+		0AB1420B2A671FA2002BCF5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0AB142112A671FA2002BCF5A /* tongue-unlockerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tongue-unlockerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB142152A671FA2002BCF5A /* tongue_unlockerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tongue_unlockerTests.swift; sourceTree = "<group>"; };
+		0AB1421B2A671FA2002BCF5A /* tongue-unlockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tongue-unlockerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB1421F2A671FA2002BCF5A /* tongue_unlockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tongue_unlockerUITests.swift; sourceTree = "<group>"; };
+		0AB142212A671FA2002BCF5A /* tongue_unlockerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tongue_unlockerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AB141F82A671F9F002BCF5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AB1420E2A671FA2002BCF5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AB142182A671FA2002BCF5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AB141F22A671F9F002BCF5A = {
+			isa = PBXGroup;
+			children = (
+				0AB141FD2A671F9F002BCF5A /* tongue-unlocker */,
+				0AB142142A671FA2002BCF5A /* tongue-unlockerTests */,
+				0AB1421E2A671FA2002BCF5A /* tongue-unlockerUITests */,
+				0AB141FC2A671F9F002BCF5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AB141FC2A671F9F002BCF5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AB141FB2A671F9F002BCF5A /* tongue-unlocker.app */,
+				0AB142112A671FA2002BCF5A /* tongue-unlockerTests.xctest */,
+				0AB1421B2A671FA2002BCF5A /* tongue-unlockerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AB141FD2A671F9F002BCF5A /* tongue-unlocker */ = {
+			isa = PBXGroup;
+			children = (
+				0AB141FE2A671FA0002BCF5A /* tongue_unlockerApp.swift */,
+				0AB142002A671FA0002BCF5A /* Persistence.swift */,
+				0AB142052A671FA0002BCF5A /* ContentView.swift */,
+				0AB142072A671FA2002BCF5A /* Assets.xcassets */,
+				0AB142092A671FA2002BCF5A /* tongue_unlocker.entitlements */,
+				0AB142022A671FA0002BCF5A /* tongue_unlocker.xcdatamodeld */,
+				0AB1420A2A671FA2002BCF5A /* Preview Content */,
+			);
+			path = "tongue-unlocker";
+			sourceTree = "<group>";
+		};
+		0AB1420A2A671FA2002BCF5A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0AB1420B2A671FA2002BCF5A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0AB142142A671FA2002BCF5A /* tongue-unlockerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AB142152A671FA2002BCF5A /* tongue_unlockerTests.swift */,
+			);
+			path = "tongue-unlockerTests";
+			sourceTree = "<group>";
+		};
+		0AB1421E2A671FA2002BCF5A /* tongue-unlockerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0AB1421F2A671FA2002BCF5A /* tongue_unlockerUITests.swift */,
+				0AB142212A671FA2002BCF5A /* tongue_unlockerUITestsLaunchTests.swift */,
+			);
+			path = "tongue-unlockerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AB141FA2A671F9F002BCF5A /* tongue-unlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AB142252A671FA2002BCF5A /* Build configuration list for PBXNativeTarget "tongue-unlocker" */;
+			buildPhases = (
+				0AB141F72A671F9F002BCF5A /* Sources */,
+				0AB141F82A671F9F002BCF5A /* Frameworks */,
+				0AB141F92A671F9F002BCF5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tongue-unlocker";
+			productName = "tongue-unlocker";
+			productReference = 0AB141FB2A671F9F002BCF5A /* tongue-unlocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0AB142102A671FA2002BCF5A /* tongue-unlockerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AB142282A671FA2002BCF5A /* Build configuration list for PBXNativeTarget "tongue-unlockerTests" */;
+			buildPhases = (
+				0AB1420D2A671FA2002BCF5A /* Sources */,
+				0AB1420E2A671FA2002BCF5A /* Frameworks */,
+				0AB1420F2A671FA2002BCF5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AB142132A671FA2002BCF5A /* PBXTargetDependency */,
+			);
+			name = "tongue-unlockerTests";
+			productName = "tongue-unlockerTests";
+			productReference = 0AB142112A671FA2002BCF5A /* tongue-unlockerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0AB1421A2A671FA2002BCF5A /* tongue-unlockerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AB1422B2A671FA2002BCF5A /* Build configuration list for PBXNativeTarget "tongue-unlockerUITests" */;
+			buildPhases = (
+				0AB142172A671FA2002BCF5A /* Sources */,
+				0AB142182A671FA2002BCF5A /* Frameworks */,
+				0AB142192A671FA2002BCF5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AB1421D2A671FA2002BCF5A /* PBXTargetDependency */,
+			);
+			name = "tongue-unlockerUITests";
+			productName = "tongue-unlockerUITests";
+			productReference = 0AB1421B2A671FA2002BCF5A /* tongue-unlockerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AB141F32A671F9F002BCF5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0AB141FA2A671F9F002BCF5A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					0AB142102A671FA2002BCF5A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 0AB141FA2A671F9F002BCF5A;
+					};
+					0AB1421A2A671FA2002BCF5A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 0AB141FA2A671F9F002BCF5A;
+					};
+				};
+			};
+			buildConfigurationList = 0AB141F62A671F9F002BCF5A /* Build configuration list for PBXProject "tongue-unlocker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0AB141F22A671F9F002BCF5A;
+			productRefGroup = 0AB141FC2A671F9F002BCF5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AB141FA2A671F9F002BCF5A /* tongue-unlocker */,
+				0AB142102A671FA2002BCF5A /* tongue-unlockerTests */,
+				0AB1421A2A671FA2002BCF5A /* tongue-unlockerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AB141F92A671F9F002BCF5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB1420C2A671FA2002BCF5A /* Preview Assets.xcassets in Resources */,
+				0AB142082A671FA2002BCF5A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AB1420F2A671FA2002BCF5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AB142192A671FA2002BCF5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AB141F72A671F9F002BCF5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB141FF2A671FA0002BCF5A /* tongue_unlockerApp.swift in Sources */,
+				0AB142042A671FA0002BCF5A /* tongue_unlocker.xcdatamodeld in Sources */,
+				0AB142062A671FA0002BCF5A /* ContentView.swift in Sources */,
+				0AB142012A671FA0002BCF5A /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AB1420D2A671FA2002BCF5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB142162A671FA2002BCF5A /* tongue_unlockerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AB142172A671FA2002BCF5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB142202A671FA2002BCF5A /* tongue_unlockerUITests.swift in Sources */,
+				0AB142222A671FA2002BCF5A /* tongue_unlockerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AB142132A671FA2002BCF5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AB141FA2A671F9F002BCF5A /* tongue-unlocker */;
+			targetProxy = 0AB142122A671FA2002BCF5A /* PBXContainerItemProxy */;
+		};
+		0AB1421D2A671FA2002BCF5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AB141FA2A671F9F002BCF5A /* tongue-unlocker */;
+			targetProxy = 0AB1421C2A671FA2002BCF5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AB142232A671FA2002BCF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0AB142242A671FA2002BCF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0AB142262A671FA2002BCF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "tongue-unlocker/tongue_unlocker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tongue-unlocker/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Y69BC5249;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brenor2.tongue-unlocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AB142272A671FA2002BCF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "tongue-unlocker/tongue_unlocker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tongue-unlocker/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Y69BC5249;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brenor2.tongue-unlocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0AB142292A671FA2002BCF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Y69BC5249;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brenor2.tongue-unlockerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tongue-unlocker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/tongue-unlocker";
+			};
+			name = Debug;
+		};
+		0AB1422A2A671FA2002BCF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Y69BC5249;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brenor2.tongue-unlockerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tongue-unlocker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/tongue-unlocker";
+			};
+			name = Release;
+		};
+		0AB1422C2A671FA2002BCF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Y69BC5249;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brenor2.tongue-unlockerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tongue-unlocker";
+			};
+			name = Debug;
+		};
+		0AB1422D2A671FA2002BCF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Y69BC5249;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brenor2.tongue-unlockerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tongue-unlocker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AB141F62A671F9F002BCF5A /* Build configuration list for PBXProject "tongue-unlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB142232A671FA2002BCF5A /* Debug */,
+				0AB142242A671FA2002BCF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AB142252A671FA2002BCF5A /* Build configuration list for PBXNativeTarget "tongue-unlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB142262A671FA2002BCF5A /* Debug */,
+				0AB142272A671FA2002BCF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AB142282A671FA2002BCF5A /* Build configuration list for PBXNativeTarget "tongue-unlockerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB142292A671FA2002BCF5A /* Debug */,
+				0AB1422A2A671FA2002BCF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AB1422B2A671FA2002BCF5A /* Build configuration list for PBXNativeTarget "tongue-unlockerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB1422C2A671FA2002BCF5A /* Debug */,
+				0AB1422D2A671FA2002BCF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0AB142022A671FA0002BCF5A /* tongue_unlocker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0AB142032A671FA0002BCF5A /* tongue_unlocker.xcdatamodel */,
+			);
+			currentVersion = 0AB142032A671FA0002BCF5A /* tongue_unlocker.xcdatamodel */;
+			path = tongue_unlocker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0AB141F32A671F9F002BCF5A /* Project object */;
+}
