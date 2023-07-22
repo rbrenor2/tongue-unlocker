@@ -16,6 +16,8 @@
 		0AB142162A671FA2002BCF5A /* tongue_unlockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB142152A671FA2002BCF5A /* tongue_unlockerTests.swift */; };
 		0AB142202A671FA2002BCF5A /* tongue_unlockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1421F2A671FA2002BCF5A /* tongue_unlockerUITests.swift */; };
 		0AB142222A671FA2002BCF5A /* tongue_unlockerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB142212A671FA2002BCF5A /* tongue_unlockerUITestsLaunchTests.swift */; };
+		0AE7A5322A6BB4290097E089 /* SwiftUIAVCaptureVideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7A5312A6BB4290097E089 /* SwiftUIAVCaptureVideoPreviewView.swift */; };
+		0AE7A5342A6BB4E50097E089 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7A5332A6BB4E50097E089 /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		0AB1421B2A671FA2002BCF5A /* tongue-unlockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tongue-unlockerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB1421F2A671FA2002BCF5A /* tongue_unlockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tongue_unlockerUITests.swift; sourceTree = "<group>"; };
 		0AB142212A671FA2002BCF5A /* tongue_unlockerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tongue_unlockerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0AE7A5312A6BB4290097E089 /* SwiftUIAVCaptureVideoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAVCaptureVideoPreviewView.swift; sourceTree = "<group>"; };
+		0AE7A5332A6BB4E50097E089 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		0AE7A5372A6BBA2F0097E089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +104,12 @@
 		0AB141FD2A671F9F002BCF5A /* tongue-unlocker */ = {
 			isa = PBXGroup;
 			children = (
+				0AE7A5372A6BBA2F0097E089 /* Info.plist */,
+				0AE7A5312A6BB4290097E089 /* SwiftUIAVCaptureVideoPreviewView.swift */,
 				0AB141FE2A671FA0002BCF5A /* tongue_unlockerApp.swift */,
 				0AB142002A671FA0002BCF5A /* Persistence.swift */,
 				0AB142052A671FA0002BCF5A /* ContentView.swift */,
+				0AE7A5332A6BB4E50097E089 /* MobileNetV2.mlmodel */,
 				0AB142072A671FA2002BCF5A /* Assets.xcassets */,
 				0AB142092A671FA2002BCF5A /* tongue_unlocker.entitlements */,
 				0AB142022A671FA0002BCF5A /* tongue_unlocker.xcdatamodeld */,
@@ -265,9 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE7A5342A6BB4E50097E089 /* MobileNetV2.mlmodel in Sources */,
 				0AB141FF2A671FA0002BCF5A /* tongue_unlockerApp.swift in Sources */,
 				0AB142042A671FA0002BCF5A /* tongue_unlocker.xcdatamodeld in Sources */,
 				0AB142062A671FA0002BCF5A /* ContentView.swift in Sources */,
+				0AE7A5322A6BB4290097E089 /* SwiftUIAVCaptureVideoPreviewView.swift in Sources */,
 				0AB142012A671FA0002BCF5A /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +437,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tongue-unlocker/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app \"Object Recognition\" would like to use camera.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -437,7 +449,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -445,7 +457,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brenor2.tongue-unlocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -465,6 +479,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tongue-unlocker/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app \"Object Recognition\" would like to use camera.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -475,7 +491,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -483,7 +499,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brenor2.tongue-unlocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
